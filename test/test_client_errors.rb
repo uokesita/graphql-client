@@ -90,7 +90,8 @@ class TestClientErrors < MiniTest::Test
       "errors" => [
         {
           "message" => "error",
-          "normalizedPath" => %w(data)
+          "normalizedPath" => %w(data),
+          "path" => []
         }
       ]
     }
@@ -138,7 +139,8 @@ class TestClientErrors < MiniTest::Test
         {
           "message" => "error",
           "path" => %w(node projects owner),
-          "normalizedPath" => %w(data)
+          "normalizedPath" => %w(data),
+          "path" => []
         }
       ]
     }
